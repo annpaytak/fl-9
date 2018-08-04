@@ -5,7 +5,7 @@
 		border-radius: 100%;
 	}
 	h2.tm-section-title-box {
-    	font-size: 3em;
+    		font-size: 3em;
 	}
 	.tm-section-title-box:hover{
 		background-color: #31b5d6;
@@ -23,15 +23,15 @@
 		content: "";
 		position: relative;
 		top: 29px;
-        border-top: 30px solid #2aabd2;
-        border-right: 120px solid transparent;
-        z-index: 1;
+        	border-top: 30px solid #2aabd2;
+        	border-right: 120px solid transparent;
+        	z-index: 1;
 	}
 	section::before{
 		content: "";
-        border-top: 30px solid #2aabd2;
-        border-right: 120px solid transparent;
-        z-index: 1;
+        	border-top: 30px solid #2aabd2;
+        	border-right: 120px solid transparent;
+        	z-index: 1;
 	}
 	.carousel-item .tm-section-title{
 		color: gainsboro;
@@ -41,10 +41,10 @@
 		font-style: italic;
 	}
 	p:not(.tm-banner-text) {
-        line-height: 2em;
-        text-indent: 1em;
-    }
-     a:visited {
+        	line-height: 2em;
+        	text-indent: 1em;
+   	 }
+    	a:visited {
   		color: #C0C0C0;
  	}
  	a.text::after{
@@ -74,9 +74,9 @@
   		background: ghostwhite;
 	}
 	.boxes.gallery-container div > h2{
-        font-size: 2.8em;
-        border-bottom: 30px;
-    }
+        	font-size: 2.8em;
+        	border-bottom: 30px;
+    	}
 	.tm-content-box p{
 		margin: 0 5px 0 0;
 		line-height: 30px;
@@ -117,30 +117,27 @@
 	h2.tm-section-title{
 		color: blue;
 	}
-	/*@page{
-  		margin-top: 1.5cm;
-	}*/
 	.tm-sidebar,.gallery-container, section:not(:first-of-type){
-        display: none;
-    }
-    .tm-main-content{
-        margin-left: 0;
-        padding-left: 0;
-    }
-    .tm-banner{
-        height: 200px;
-        padding: unset;
-    }
-    .pad{
-    	padding: 0 0 0 20px;
-    }
-    .flex-2-col{
+        	display: none;
+    	}
+    	.tm-main-content{
+        	margin-left: 0;
+        	padding-left: 0;
+    	}
+    	.tm-banner{
+       	 	height: 200px;
+        	padding: unset;
+    	}
+    	.pad{
+    		padding: 0 0 0 20px;
+    	}
+    	.flex-2-col{
 		display: block;
-    }
-    .flex-item{
-    	max-width: none;
-    }
-    .flex-item:last-child{
-    	text-align: center;
-    }
+    	}
+    	.flex-item{
+    		max-width: none;
+    	}
+    	.flex-item:last-child{
+    		text-align: center;
+    	}
 }
