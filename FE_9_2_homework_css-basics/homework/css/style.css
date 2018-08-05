@@ -88,9 +88,6 @@
 	.gallery-container p:first-letter{
 		color: black;
 	}
-	input[type=text]::-webkit-input-placeholder {
-		color: red !important;
-	}
 	#contact_email{
 		color: gray;
 	}
