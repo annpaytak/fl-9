@@ -130,10 +130,19 @@ h2{
 }
 .img-rel{
 	position: relative;
-  	width: 63%;
+  	height: 322px;
+  	width: 770px;
+}
+.img-rel:after {
+  	content: '';
+  	position: absolute;
+  	top: 1.3em; left: 0; bottom: 0; right: 0;
+  	box-shadow: inset 0px 0px 100px #343638;
+
 }
 .img-article img{
 	width: 100%;
+	height:100%;
 }
 .like{
 	position: absolute;
