@@ -117,10 +117,11 @@ h2{
 	letter-spacing: 2px;
 }
 .p-lorem-in-article{
-	width: 35%;
+	width: 40%;
 	display: flex;
 	align-self: center;
 	text-align: center;
+	padding: 0 2em 0 1em;
 }
 .odd-p{
 	margin-left: 2em;
@@ -146,8 +147,8 @@ h2{
 }
 .like{
 	position: absolute;
-    	top: 3.6em;
-    	right: 7em;
+    	top: 4em;
+    	right: 0;
     	height: 2em;
     	width: 4em;
     	transform: translate(-50%, -50%);
