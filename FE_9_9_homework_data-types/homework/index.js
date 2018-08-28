@@ -49,7 +49,6 @@ let pStein = Object.create(data).constructor('5b5e3168c6bf40f2c1235cd6', '0', '3
 let pCortez = Object.create(data).constructor('5b5e3168e328c0d72e4f27d8', '1', '38', 'blue', 'Cortez', 'strawberry');
 let pSuzette = Object.create(data).constructor('5b5e3168cc79132b631c666a', '2', '2', 'blue', 'Suzette', 'apple');
 let pWeiss = Object.create(data).constructor('5b5e31682093adcc6cd0dde5', '3', '17', 'green', 'Weiss', 'banana');
-console.log(pCortez.index);
 
 function keys(obj) {
     const arrayOfKeys = [];
