@@ -24,31 +24,26 @@ function filter(arr, f){
     return transformed;
 }
 
-function getAdultAppleLovers(arr) {
-    const transformed = filter(arr, item => {
-        return item.age > 18 && item.favoriteFruit === 'apple';
-    });
-    map(transformed, (item) => {
-        return item.name;
-    })
+function getAdultAppleLovers(data) {
+    return map(filter(data, item => item.age > 18 && item.favoriteFruit === 'apple'),
+    item => item.name);
 }
 
-const data = {
-    constructor: function(_id, index, age, eyeColor, name, favoriteFruit) {
-        this._id = _id;
-        this.index = index;
-        this.age = age;
-        this.eyeColor = eyeColor;
-        this.name = name;
-        this.favoriteFruit = favoriteFruit;
-        return this;
-    }
-};
+function Data(_id, index, age, eyeColor, name, favoriteFruit) {
+	this._id = _id;
+	this.index = index;
+	this.age = age;
+	this.eyeColor = eyeColor;
+	this.name = name;
+	this.favoriteFruit = favoriteFruit;
+	return this;
+}
     
-let pStein = Object.create(data).constructor('5b5e3168c6bf40f2c1235cd6', '0', '39', 'green', 'Stein', 'apple');
-let pCortez = Object.create(data).constructor('5b5e3168e328c0d72e4f27d8', '1', '38', 'blue', 'Cortez', 'strawberry');
-let pSuzette = Object.create(data).constructor('5b5e3168cc79132b631c666a', '2', '2', 'blue', 'Suzette', 'apple');
-let pWeiss = Object.create(data).constructor('5b5e31682093adcc6cd0dde5', '3', '17', 'green', 'Weiss', 'banana');
+let arrData = [];
+arrData.push(new Data('5b5e3168c6bf40f2c1235cd6', '0', '39', 'green', 'Stein', 'apple');
+arrData.push(new Data('5b5e3168e328c0d72e4f27d8', '1', '38', 'blue', 'Cortez', 'strawberry');
+arrData.push(new Data('5b5e3168cc79132b631c666a', '2', '2', 'blue', 'Suzette', 'apple');
+arrData.push(new Data('5b5e31682093adcc6cd0dde5', '3', '17', 'green', 'Weiss', 'banana');
 
 function keys(obj) {
     const arrayOfKeys = [];
