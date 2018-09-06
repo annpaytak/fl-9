@@ -4,15 +4,15 @@ body{
 	padding:0;
 }
 button {
-    border: 0;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    	border: 0;
+    	background: none;
+    	padding: 0;
+    	cursor: pointer;
+    	display: flex;
+    	align-items: center;
 }
 [disabled] {
-    cursor: not-allowed;
+    	cursor: not-allowed;
 }
 .todo-cat-h1{
 	font-weight: normal;
@@ -21,10 +21,10 @@ button {
 .todo-cat-input{
 	width: 70%;
 	border: 1px solid #000;
-    padding: .2em .3em;
-    font-size: .9em;
-    flex-grow: 1;
-    margin-right: .4em;
+    	padding: .2em .3em;
+    	font-size: .9em;
+    	flex-grow: 1;
+    	margin-right: .4em;
 }
 .todo-cat-button{
 	border: none;
@@ -35,9 +35,9 @@ button {
 }
 .todo-cat-wrapper{
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10em;
+    	justify-content: center;
+    	align-items: center;
+    	margin-top: 10em;
 }
 .todo-section{
 	width: 40em;
@@ -55,10 +55,10 @@ button {
 	position: absolute;
 	right: 47%;
 	display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex: 1;
-    bottom: .6em;
+    	justify-content: center;
+	align-items: flex-end;
+    	flex: 1;
+   	bottom: .6em;
 }
 ul{
 	list-style: none;
@@ -66,6 +66,10 @@ ul{
 .li-todo-cat{
 	cursor: move;
 	display: flex;
-    align-items: center;
-    margin-bottom: .2em;
+    	align-items: center;
+    	margin-bottom: .2em;
+}
+.todo-cat-list-limit-msg{
+	display:none;
+	text-align: center;
 }
