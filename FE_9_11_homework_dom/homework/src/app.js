@@ -4,6 +4,7 @@ const Max_Items_Quantity = 10;
 let list = document.getElementById('list');
 let inputField = document.getElementsByClassName('todo-cat-input')[itemCounter];
 let addButton = document.getElementsByClassName('todo-cat-button')[itemCounter];
+let MaxItemsMessage = document.getElementsByClassName('todo-cat-list-limit-msg');
 
 inputField.addEventListener('change', changeActivity);
 inputField.addEventListener('keyup', changeActivity);
@@ -55,6 +56,7 @@ function addTodo (){
 	});
 	if (++itemCounter >= Max_Items_Quantity) {
 		inputField.disabled = true;
+		MaxItemsMessage.style.display = block;
 	}
 	inputField.value = '';
 	addButton.disabled = true;
