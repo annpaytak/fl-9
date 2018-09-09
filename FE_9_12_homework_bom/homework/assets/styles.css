@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+	width: 350px;
+	align-self: center;
+  	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul:empty + p {
+    display: block;
+}
+.todo-text{
+	border-radius: 0;
+}
+input {
+	margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    border-bottom: 2px solid #808080;
+    border-radius: 10px;
+    border-right: 2px solid #808080;
+}
+#button-main{
+	width: 200px;
+}
+.inputLi{
+	border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+.buttons-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+button {
+	margin: 20px 0 0 0;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #D3D3D3;
+    border-bottom: 2px solid #808080;
+    border-radius: 10px;
+    border-right: 2px solid #808080;
+    color:black;
+}
+section{
+	margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.checkbox-done, .checkbox-undone, .todo-text, .remove {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background-color: unset;
+}
+.checkbox-undone {
+    background-image: url("./img/todo-s.png");
+}
+.checkbox-done {
+    background-image: url("./img/done-s.png");
+}
+.checkbox-done + .todo-text {
+    background: #bbb;
+}
+.todo-text {
+    flex: 1;
+}
+.remove {
+    background-image: url("./img/remove-s.jpg");
+}
+.empty-todo {
+    text-align: center;
+    display: none;
+    padding: 20px;
+    font-size: 1.8em;
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+	font-family: sans-serif;
+  position: absolute;
+  border: none;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items:last-child{
+  border-bottom: 1.5px solid #000;
+}
+.autocomplete-items div {
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-right: 1.5px solid #000; 
+  border-left: 1.5px solid #000;
+}
